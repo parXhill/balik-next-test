@@ -4,7 +4,7 @@ export default function Search(){
 
     return (
     <>
-        <p className="text-black bg-white bg-opacity-50 p-2 rounded">SearchBar</p>
+        <div className="text-black bg-white w-[93vw] h-10 p-2 rounded-full shadow-lg"></div>
     </>
 
     )

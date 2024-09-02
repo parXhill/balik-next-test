@@ -9,7 +9,7 @@ export default function Home() {
     <>
       <div className="relative w-full h-screen">
         <Map className="absolute top-0 left-0 w-full h-full z-10" />
-        <div className="absolute top-0 left-0 z-20 p-4">
+        <div className="absolute top-6 z-20 left-1/2 transform -translate-x-1/2">
            <Search/> 
         </div>   
       </div>
