@@ -11,7 +11,6 @@ import { IoChatbubbleEllipsesOutline } from "react-icons/io5";
 export default function NavigationBar(){
 
     return (
-        <div className="absolute bottom-0 left-0 z-20 w-full">
         <div className="text-black bg-white h-16 flex justify-around items-center">
             <div className="flex flex-col items-center justify-center">
                 <PiBowlFood className="text-3xl font-extrabold"/>
@@ -39,7 +38,6 @@ export default function NavigationBar(){
             </div>
 
 
-        </div>
         </div>
     );
 
