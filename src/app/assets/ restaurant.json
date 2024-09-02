@@ -19,7 +19,7 @@
         {
           "name": "Deal 0",
           "description": "Special offer on selected menu items",
-          "shortDescription": "Discounted menu items",
+          "shortDescription": "Discounted items",
           "photoUrl": "https://images.app.goo.gl/v5SGCDFSoZ8RX4ek6",
           "price": "$10",
           "tags": ["discount", "lunch"],
@@ -32,7 +32,7 @@
       "name": "Clear Cafe",
       "description": "A nice and cozy place",
       "images": [
-        "https://lh5.googleusercontent.com/p/AF1QipOApZZT3BaJpSIxFFajzszhJZ_2Tn4PHHzG8RrC=w203-h152-k-no"
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvc4sTdhRh_WAdiTSmNlKzAnZ-hyRRlXVWesE92Qxom4_f7mMX85GewjuijF7Emth3hJ4&usqp=CAU"
       ],
       "marker": "💎",
       "googleMapUrl": "https://goo.gl/maps/b4ij3XGVrd5s3jGu5",
@@ -58,10 +58,10 @@
       "name": "Machinery Perenan",
       "description": "Creative brews, inviting ambiance, exceptional experience. A must-visit for coffee aficionados!",
       "images": [
-        "https://storage.googleapis.com/balik-storage/restaurant-img/machinery.png"
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGOl2HD-DLeQOc4oyC3pqYKcSAJxQcXqdFBQ&s"
       ],
       "marker": "🕹️",
-      "googleMapUrl": "https://goo.gl/maps/jwnnY6i55LrjVq5t7",
+      "googleMapUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7YoYfb4BH35yxln8H-oh5mR4eWSY4ZXvsgA&s",
       "location": {
         "latitude": -8.64346524289738,
         "longitude": 115.12596325454206
@@ -84,7 +84,7 @@
       "name": "Cantina Classe by Wonderspace",
       "description": "A Canggu-based Italian restaurant with wonderful old-style architecture that looks like a classic stone oven",
       "images": [
-        "https://storage.googleapis.com/balik-storage/restaurant-img/cantina/1.png"
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwFFWQPelaClW6briiq1nZz1bHsXYoNXmS_g&s"
       ],
       "marker": "🍕",
       "googleMapUrl": "https://goo.gl/maps/usQgft9fW3JnqDxX8",
