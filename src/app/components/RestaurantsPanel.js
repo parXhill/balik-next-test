@@ -10,7 +10,7 @@ export default function RestaurantsPanel(){
 
     return (
     <div className="w-full h-48 flex overflow-x-scroll no-scrollbar mb-2">
-        {restaurantArray.map(restaurant => {return( <RestaurantCard restaurant={restaurant}/> )})}
+        {restaurantArray.map(restaurant => {return( <RestaurantCard key={restaurant.id} restaurant={restaurant}/> )})}
        
     </div>
     );
