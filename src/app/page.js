@@ -14,10 +14,10 @@ export default function Home() {
         </div>   
       </div>
 
-      <div className="absolute bottom-16 left-0 z-20 w-full overflow-x-scroll">
+      <div className="absolute bottom-0 left-0 z-20 w-full overflow-x-scroll">
         <RestaurantsPanel/>
       </div>
-        <NavigationBar className="absolute bottom-0 left-0 z-20 w-full"/>
+        <NavigationBar className="absolute bottom-0 left-0 z-30 w-full"/>
  
       
   
