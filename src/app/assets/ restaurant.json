@@ -20,7 +20,7 @@
           "name": "Deal 0",
           "description": "Special offer on selected menu items",
           "shortDescription": "Discounted items",
-          "photoUrl": "https://images.app.goo.gl/v5SGCDFSoZ8RX4ek6",
+          "photoUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4jwwC_q7aM1-w6GtufSMqzXR4q43t3Xg7A&s",
           "price": "$10",
           "tags": ["discount", "lunch"],
           "marker": "💰"
@@ -46,7 +46,7 @@
           "name": "Deal 1",
           "description": "20% off on breakfast menu",
           "shortDescription": "Breakfast discount",
-          "photoUrl": "https://example.com/deal1.jpg",
+          "photoUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4jwwC_q7aM1-w6GtufSMqzXR4q43t3Xg7A&s",
           "price": "$8",
           "tags": ["discount", "breakfast"],
           "marker": "🍳"
@@ -72,7 +72,7 @@
           "name": "Deal 1",
           "description": "Buy 1 get 1 free on all coffee beverages",
           "shortDescription": "Coffee offer",
-          "photoUrl": "https://example.com/deal2.jpg",
+          "photoUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4jwwC_q7aM1-w6GtufSMqzXR4q43t3Xg7A&s",
           "price": "$5",
           "tags": ["discount", "coffee"],
           "marker": "☕"
@@ -98,7 +98,7 @@
           "name": "Deal 1",
           "description": "Pizza and drink combo for $15",
           "shortDescription": "Pizza combo",
-          "photoUrl": "https://example.com/deal3.jpg",
+          "photoUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn4jwwC_q7aM1-w6GtufSMqzXR4q43t3Xg7A&s",
           "price": "$15",
           "tags": ["discount", "pizza"],
           "marker": "🍕"

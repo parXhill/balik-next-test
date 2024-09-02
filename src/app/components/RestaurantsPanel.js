@@ -9,7 +9,7 @@ export default function RestaurantsPanel(){
 
 
     return (
-    <div className="w-full h-auto flex overflow-x-scroll no-scrollbar">
+    <div className="w-full h-auto flex overflow-x-scroll no-scrollbar items-end">
         {restaurantArray.map(restaurant => {return( <RestaurantCard key={restaurant.id} restaurant={restaurant}/> )})}
        
     </div>
