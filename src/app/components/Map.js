@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useEffect, useState, useRef } from 'react';
 import restaurantData from '../assets/ restaurant.json';
 import mapboxgl from 'mapbox-gl';

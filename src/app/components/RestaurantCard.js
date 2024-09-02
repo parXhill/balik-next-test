@@ -1,5 +1,4 @@
 import React from 'react';
-import '../assets/RestaurantCard.css'
 
 const RestaurantCard = ({ restaurant, onClose }) => {
     return (
