@@ -17,9 +17,8 @@ export default function Home() {
       <div className="absolute bottom-16 left-0 z-20 w-full overflow-x-scroll">
         <RestaurantsPanel/>
       </div>
-      <div className="absolute bottom-0 left-0 z-20 w-full">
-        <NavigationBar/>
-      </div>
+        <NavigationBar className="absolute bottom-0 left-0 z-20 w-full"/>
+ 
       
   
 
