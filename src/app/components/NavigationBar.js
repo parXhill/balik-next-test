@@ -1,10 +1,12 @@
 'use client'
 
-import { PiBowlFood } from "react-icons/pi";
-import { IoTicketOutline } from "react-icons/io5";
+import { PiBowlFoodBold } from "react-icons/pi";
 import { FiHome } from "react-icons/fi";
 import { CgProfile } from "react-icons/cg";
-import { IoChatbubbleEllipsesOutline } from "react-icons/io5";
+import { GrTicket } from "react-icons/gr";
+import { HiOutlineChat } from "react-icons/hi";
+
+
 
 
 
@@ -13,12 +15,12 @@ export default function NavigationBar(){
     return (
         <div className="text-black bg-white h-16 flex justify-around items-center">
             <div className="flex flex-col items-center justify-center">
-                <PiBowlFood className="text-3xl font-extrabold"/>
+                <PiBowlFoodBold className="text-3xl font-extrabold"/>
                 <p className="text-xs">Eat</p>
             </div>
 
             <div className="flex flex-col items-center justify-center">
-                <IoTicketOutline className="text-3xl font-extrabold"/>
+                <GrTicket  className="text-3xl font-extrabold"/>
                 <p className="text-xs">Deals</p>
             </div>
 
@@ -33,7 +35,7 @@ export default function NavigationBar(){
             </div>
 
             <div className="flex flex-col items-center justify-center">
-                <IoChatbubbleEllipsesOutline className="text-3xl font-extrabold"/>
+                <HiOutlineChat className="text-3xl font-extrabold"/>
                 <p className="text-xs">Ask</p>
             </div>
 
