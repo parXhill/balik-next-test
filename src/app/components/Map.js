@@ -49,12 +49,8 @@ const MapComponent = () => {
     };
 
     return (
-        <div style={{ position: 'relative' }}>
-            <div
-                ref={mapContainerRef}
-                style={{ width: '100vw', height: '100vh' }}
-                className="map-container"
-            />
+        <div className="absolute top-0 left-0 w-full h-full z-10"
+                ref={mapContainerRef}>
             {selectedRestaurant && (
                 <RestaurantCard
                     restaurant={selectedRestaurant}
