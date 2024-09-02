@@ -52,7 +52,7 @@ const MapComponent = () => {
         <div style={{ position: 'relative' }}>
             <div
                 ref={mapContainerRef}
-                style={{ width: '80vw', height: '100vh' }}
+                style={{ width: '100vw', height: '100vh' }}
                 className="map-container"
             />
             {selectedRestaurant && (
