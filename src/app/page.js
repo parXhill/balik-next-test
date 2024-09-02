@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Map from "./components/Map.js";
+import NavigationBar from "./components/NavigationBar.js";
 
 export default function Home() {
   return (
@@ -9,6 +10,10 @@ export default function Home() {
         <div className="absolute top-0 left-0 z-20 p-4">
           <p className="text-white bg-black bg-opacity-50 p-2 rounded">SearchBar</p>
         </div>
+      </div>
+
+      <div className="absolute bottom-0 left-0 z-20 w-full">
+         <NavigationBar/>
       </div>
     </>
   );
