@@ -37,7 +37,6 @@ export default function MapComponent({dispatch}) {
                 .getElement()
                 .addEventListener('click', (e) => {
                     e.stopPropagation();
-                    console.log('clicked', restaurant.id)
                     dispatch(setSelectedRestaurant(restaurant.id));
                     
                 });

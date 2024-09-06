@@ -15,13 +15,17 @@ export default function Home() {
   const dispatch = useDispatch();
   const selectedRestaurant = useSelector((state) => state.mapData.selectedRestaurant)
 
+  console.log('in page', selectedRestaurant)
+
   return (
     <>
       <div className="relative w-full h-screen overflow-hidden">
         <Map dispatch={dispatch}/>
         <div className="absolute top-6 z-20 left-1/2 transform -translate-x-1/2">
-           <Search/> 
+        <Search/> 
         </div>   
+
+        {selectedRestaurant ? <div></div>: null}
 
         <div className="absolute bottom-16 left-0 z-20 w-full overflow-x-scroll">
         <RestaurantsPanel dispatch={dispatch}/>
