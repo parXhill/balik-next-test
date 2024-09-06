@@ -38,9 +38,9 @@ export default function Home() {
         null
   }
   
-        <div className="absolute bottom-16 left-0 z-20 w-full overflow-x-scroll">
+     {!selectedRestaurantId && <div className="absolute bottom-16 left-0 z-20 w-full overflow-x-scroll">
         <RestaurantsPanel dispatch={dispatch} selectedRestaurantId={selectedRestaurantId}/>
-      </div>
+      </div>}
 
         <div className="absolute bottom-0 left-0 z-30 w-full">
         <NavigationBar dispatch={dispatch}/>
