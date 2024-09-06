@@ -11,7 +11,7 @@ import { setSelectedRestaurant, setMapInstance } from '../../store/slices/mapSli
 
 mapboxgl.accessToken = 'pk.eyJ1IjoiYXZlbmR1bSIsImEiOiJjbHp6aHBkNjExZ21xMmtwZ25naWR2YTBhIn0.G1J-yLq_atEuOH51EJJ9ug';
 
-const MapComponent = ({dispatch}) => {
+export default function MapComponent({dispatch}) {
     const mapContainerRef = useRef(null);
     const selectedRestaurant = useSelector((state) => state.mapData.selectedRestaurant)
 
@@ -37,7 +37,9 @@ const MapComponent = ({dispatch}) => {
                 .getElement()
                 .addEventListener('click', (e) => {
                     e.stopPropagation();
-                    dispatch(setSelectedRestaurant(restaurant));
+                    console.log('clicked', restaurant.id)
+                    dispatch(setSelectedRestaurant(restaurant.id));
+                    
                 });
         });
 
@@ -53,5 +55,3 @@ const MapComponent = ({dispatch}) => {
         </div>
     );
 };
-
-export default MapComponent;
