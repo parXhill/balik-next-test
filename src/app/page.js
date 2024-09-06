@@ -21,13 +21,19 @@ export default function Home() {
 
   return (
     <>
+       
       <div className="relative w-full h-screen overflow-hidden">
+
+      
+      {selectedRestaurantId && <div className="fixed inset-0 backdrop-blur-sm bg-black bg-opacity-40 z-30"></div>}
+
+
         <Map dispatch={dispatch}/>
-        <div className="absolute top-6 z-20 left-1/2 transform -translate-x-1/2">
+        <div className="absolute top-6 z-10 left-1/2 transform -translate-x-1/2">
         <Search/> 
         </div>   
       
-        {selectedRestaurantId ? <div className="absolute top-28 z-20 left-1/2 transform -translate-x-1/2"> <RestaurantCard  restaurant={restaurantData.restaurants[selectedRestaurantId]} dispatch={dispatch}/></div> 
+        {selectedRestaurantId ? <div className="absolute top-28 z-40 left-1/2 transform -translate-x-1/2"> <RestaurantCard  restaurant={restaurantData.restaurants[selectedRestaurantId]} dispatch={dispatch}/></div> 
         : 
         null
   }
