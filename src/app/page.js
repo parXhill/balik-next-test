@@ -1,10 +1,17 @@
+'use client';
+
 import Image from "next/image";
 import Map from "./components/Map.js";
 import NavigationBar from "./components/NavigationBar.js";
 import RestaurantsPanel from "./components/RestaurantsPanel.js";
 import Search from "./components/Search.js"
 
+import { useSelector, useDispatch } from 'react-redux';
+import { increment, decrement } from '../store/slices/mapSlice.js';
+
+
 export default function Home() {
+
   return (
     <>
       <div className="relative w-full h-screen overflow-hidden">
@@ -18,7 +25,7 @@ export default function Home() {
       </div>
 
         <div className="absolute bottom-0 left-0 z-30 w-full">
-        <NavigationBar />
+        <NavigationBar/>
         </div>
 
       </div>

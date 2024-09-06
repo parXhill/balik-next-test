@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import { PiBowlFoodBold } from "react-icons/pi";
 import { GrTicket } from "react-icons/gr";
@@ -7,7 +7,7 @@ import { GrTicket } from "react-icons/gr";
 
 
 
-export default function NavigationBar(){
+export default function NavigationBar({value}){
 
     return (
         <div className="text-black bg-white h-16 flex justify-around items-center">
