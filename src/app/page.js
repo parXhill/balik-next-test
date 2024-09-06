@@ -27,7 +27,7 @@ export default function Home() {
         <Search/> 
         </div>   
       
-        {selectedRestaurantId ? <div className="absolute top-48 z-20 left-1/2 transform -translate-x-1/2"> <RestaurantCard  restaurant={restaurantData.restaurants[selectedRestaurantId]} dispatch={dispatch}/></div> 
+        {selectedRestaurantId ? <div className="absolute top-28 z-20 left-1/2 transform -translate-x-1/2"> <RestaurantCard  restaurant={restaurantData.restaurants[selectedRestaurantId]} dispatch={dispatch}/></div> 
         : 
         null
   }
