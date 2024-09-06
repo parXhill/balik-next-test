@@ -4,7 +4,9 @@ import { setSelectedRestaurant } from '../../store/slices/mapSlice.js';
 
 
 
-const RestaurantCard = ({restaurant, dispatch}) => {
+export default function RestaurantCard({restaurant, dispatch}){
+
+    console.log("restaurant as derived from restaurantcard prop", restaurant)
 
     const selectedRestaurant = useSelector((state) => state.mapData.selectedRestaurant)
 
@@ -56,8 +58,8 @@ const RestaurantCard = ({restaurant, dispatch}) => {
 
     return (
         <>
-        {restaurantId === selectedRestaurant ? null : <RegularCard/>}</>
+        <RegularCard/>
+        </>
     );
 };
 
-export default RestaurantCard;
