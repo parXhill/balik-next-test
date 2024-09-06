@@ -5,10 +5,11 @@ import restaurantData from '../assets/ restaurant.json';
 import mapboxgl from 'mapbox-gl';
 import RestaurantCard from '../restaurantCard/RestaurantCard';
 import 'mapbox-gl/dist/mapbox-gl.css';
+import { setSelectedRestaurant } from '../../store/slices/mapSlice.js';
 
 mapboxgl.accessToken = 'pk.eyJ1IjoiYXZlbmR1bSIsImEiOiJjbHp6aHBkNjExZ21xMmtwZ25naWR2YTBhIn0.G1J-yLq_atEuOH51EJJ9ug';
 
-const MapComponent = () => {
+const MapComponent = ({dispatch}) => {
     const mapContainerRef = useRef(null);
     const [map, setMap] = useState(null);
     const [selectedRestaurant, setSelectedRestaurant] = useState(null);

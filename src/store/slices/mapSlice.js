@@ -1,11 +1,11 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
-  selectedRestaurant: null,
+  selectedRestaurant: "Wenton",
 };
 
 const mapSlice = createSlice({
-  name: 'map',
+  name: 'mapSlice',
   initialState,
   reducers: {
     setSelectedRestaurant: (state, action) => {

@@ -4,7 +4,7 @@ import mapReducer from './slices/mapSlice';
 
 const store = configureStore({
   reducer: {
-    example: mapReducer,  // Add your slice reducers here
+    mapData: mapReducer,  // Add your slice reducers here
   },
 });
 
