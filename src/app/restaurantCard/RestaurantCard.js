@@ -6,8 +6,6 @@ import { setSelectedRestaurant } from '../../store/slices/mapSlice.js';
 
 export default function RestaurantCard({restaurant, dispatch}){
 
-    console.log("restaurant as derived from restaurantcard prop", restaurant)
-
     const selectedRestaurant = useSelector((state) => state.mapData.selectedRestaurant)
 
     function DealTag({tag}){
@@ -21,16 +19,12 @@ export default function RestaurantCard({restaurant, dispatch}){
     }
 
     if (restaurant.id === selectedRestaurant){
-    console.log(selectedRestaurant)}
-
-    const restaurantId = restaurant.id
+    let selectedCard = true;}
 
 
-   
-    function RegularCard(){
-
-        return(
-            <div onClick={handleClick} id={restaurantId} className="relative flex-none flex flex-col bg-slate-100 h-48 w-64 rounded-3xl mx-2 overflow-y-scroll no-scrollbar shadow-xl mb-2 transition-all duration-300">
+    return (
+        <>
+        <div onClick={handleClick} id={restaurant.id} className="relative flex-none flex flex-col bg-slate-100 h-48 w-64 rounded-3xl mx-2 overflow-y-scroll no-scrollbar shadow-xl mb-2 transition-all duration-300">
                 <img className="h-32 w-full object-cover"  src={restaurant.images} alt={restaurant.name}/>
                 <div className="absolute top-3 right-0 z-30 bg-blue-500 rounded-l-xl w-36 text-center text-xs text-white text-semibold py-1">{restaurant.deal[0].marker}     {restaurant.deal[0].shortDescription}!</div>
                 <div className="ml-5 grid grid-rows-2 grid-cols-[4fr_1fr]">
@@ -51,14 +45,6 @@ export default function RestaurantCard({restaurant, dispatch}){
                 </div>
                 
         </div>
-        );
-
-
-    }
-
-    return (
-        <>
-        <RegularCard/>
         </>
     );
 };

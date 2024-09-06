@@ -27,13 +27,13 @@ export default function Home() {
         <Search/> 
         </div>   
       
-        {selectedRestaurantId ? <div className="absolute top-32 z-20 left-1/2 transform -translate-x-1/2"> <RestaurantCard  restaurant={restaurantData.restaurants[selectedRestaurantId]} dispatch={dispatch}/></div> 
+        {selectedRestaurantId ? <div className="absolute top-48 z-20 left-1/2 transform -translate-x-1/2"> <RestaurantCard  restaurant={restaurantData.restaurants[selectedRestaurantId]} dispatch={dispatch}/></div> 
         : 
         null
   }
   
         <div className="absolute bottom-16 left-0 z-20 w-full overflow-x-scroll">
-        <RestaurantsPanel dispatch={dispatch}/>
+        <RestaurantsPanel dispatch={dispatch} selectedRestaurantId={selectedRestaurantId}/>
       </div>
 
         <div className="absolute bottom-0 left-0 z-30 w-full">

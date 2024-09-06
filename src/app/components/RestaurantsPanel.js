@@ -4,9 +4,9 @@ import restaurantData from '../assets/ restaurant.json';
 import RestaurantCard from '../restaurantCard/RestaurantCard';
 
 
-export default function RestaurantsPanel({dispatch}){
+export default function RestaurantsPanel({dispatch, selectedRestaurantId}){
 
-    let restaurantArray = restaurantData.restaurants
+    let restaurantArray = restaurantData.restaurants.filter((restaurant) => restaurant.id !== selectedRestaurantId);
 
 
     return (
