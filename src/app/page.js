@@ -7,15 +7,18 @@ import RestaurantsPanel from "./components/RestaurantsPanel.js";
 import Search from "./components/Search.js"
 
 import { useSelector, useDispatch } from 'react-redux';
-import { increment, decrement } from '../store/slices/mapSlice.js';
+import { setSelectedRestaurant } from '../store/slices/mapSlice.js';
 
 
 export default function Home() {
 
+  const dispatch = useDispatch();
+  const selectedRestaurant = useSelector((state) => state.mapData.selectedRestaurant)
+
   return (
     <>
       <div className="relative w-full h-screen overflow-hidden">
-        <Map/>
+        <Map dispatch={dispatch}/>
         <div className="absolute top-6 z-20 left-1/2 transform -translate-x-1/2">
            <Search/> 
         </div>   
