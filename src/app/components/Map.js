@@ -5,14 +5,17 @@ import restaurantData from '../assets/ restaurant.json';
 import mapboxgl from 'mapbox-gl';
 import RestaurantCard from '../restaurantCard/RestaurantCard';
 import 'mapbox-gl/dist/mapbox-gl.css';
-import { setSelectedRestaurant } from '../../store/slices/mapSlice.js';
+import { useSelector, useDispatch } from 'react-redux';
+import { setSelectedRestaurant, setMapInstance } from '../../store/slices/mapSlice.js';
+
 
 mapboxgl.accessToken = 'pk.eyJ1IjoiYXZlbmR1bSIsImEiOiJjbHp6aHBkNjExZ21xMmtwZ25naWR2YTBhIn0.G1J-yLq_atEuOH51EJJ9ug';
 
 const MapComponent = ({dispatch}) => {
     const mapContainerRef = useRef(null);
-    const [map, setMap] = useState(null);
-    const [selectedRestaurant, setSelectedRestaurant] = useState(null);
+
+    const selectedRestaurant = useSelector((state) => state.mapData.selectedRestaurant)
+    const mapInstance = useSelector((state) => state.mapData.mapInstance)
 
     useEffect(() => {
         const mapInstance = new mapboxgl.Map({
@@ -36,18 +39,15 @@ const MapComponent = ({dispatch}) => {
                 .getElement()
                 .addEventListener('click', (e) => {
                     e.stopPropagation();
-                    setSelectedRestaurant(restaurant);
+                    dispatch(setSelectedRestaurant(restaurant));
                 });
         });
 
-        setMap(mapInstance);
+        dispatch(setMapInstance(mapInstance));
 
         return () => mapInstance.remove();
     }, []);
 
-    const handleClose = () => {
-        setSelectedRestaurant(null);
-    };
 
     return (
         <div className="absolute top-0 left-0 w-full h-full z-10"
@@ -55,7 +55,6 @@ const MapComponent = ({dispatch}) => {
             {selectedRestaurant && (
                 <RestaurantCard
                     restaurant={selectedRestaurant}
-                    onClose={handleClose}
                 />
             )}
         </div>

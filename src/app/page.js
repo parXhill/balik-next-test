@@ -13,7 +13,6 @@ import { setSelectedRestaurant } from '../store/slices/mapSlice.js';
 export default function Home() {
 
   const dispatch = useDispatch();
-  const selectedRestaurant = useSelector((state) => state.mapData.selectedRestaurant)
 
   return (
     <>
