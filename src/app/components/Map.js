@@ -5,7 +5,7 @@ import restaurantData from '../assets/ restaurant.json';
 import mapboxgl from 'mapbox-gl';
 import RestaurantCard from '../restaurantCard/RestaurantCard';
 import 'mapbox-gl/dist/mapbox-gl.css';
-import { useSelector, useDispatch } from 'react-redux';
+import { useSelector} from 'react-redux';
 import { setSelectedRestaurant, setMapInstance } from '../../store/slices/mapSlice.js';
 
 
@@ -13,9 +13,7 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiYXZlbmR1bSIsImEiOiJjbHp6aHBkNjExZ21xMmtwZ25na
 
 const MapComponent = ({dispatch}) => {
     const mapContainerRef = useRef(null);
-
     const selectedRestaurant = useSelector((state) => state.mapData.selectedRestaurant)
-    const mapInstance = useSelector((state) => state.mapData.mapInstance)
 
     useEffect(() => {
         const mapInstance = new mapboxgl.Map({
@@ -52,11 +50,6 @@ const MapComponent = ({dispatch}) => {
     return (
         <div className="absolute top-0 left-0 w-full h-full z-10"
                 ref={mapContainerRef}>
-            {selectedRestaurant && (
-                <RestaurantCard
-                    restaurant={selectedRestaurant}
-                />
-            )}
         </div>
     );
 };

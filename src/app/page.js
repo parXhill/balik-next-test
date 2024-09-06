@@ -13,6 +13,7 @@ import { setSelectedRestaurant } from '../store/slices/mapSlice.js';
 export default function Home() {
 
   const dispatch = useDispatch();
+  const selectedRestaurant = useSelector((state) => state.mapData.selectedRestaurant)
 
   return (
     <>
@@ -23,11 +24,11 @@ export default function Home() {
         </div>   
 
         <div className="absolute bottom-16 left-0 z-20 w-full overflow-x-scroll">
-        <RestaurantsPanel/>
+        <RestaurantsPanel dispatch={dispatch}/>
       </div>
 
         <div className="absolute bottom-0 left-0 z-30 w-full">
-        <NavigationBar/>
+        <NavigationBar dispatch={dispatch}/>
         </div>
 
       </div>
