@@ -19,13 +19,17 @@ export default function Home() {
 
   console.log('in page', selectedRestaurantId)
 
+  function handleClose(event){
+    dispatch(setSelectedRestaurant(null));
+};
+
   return (
     <>
        
       <div className="relative w-full h-screen overflow-hidden">
 
       
-      {selectedRestaurantId && <div className="fixed inset-0 backdrop-blur-sm bg-black bg-opacity-40 z-30"></div>}
+      {selectedRestaurantId && <div onClick={handleClose} className="fixed inset-0 backdrop-blur-sm bg-black bg-opacity-40 z-30"></div>}
 
 
         <Map dispatch={dispatch}/>

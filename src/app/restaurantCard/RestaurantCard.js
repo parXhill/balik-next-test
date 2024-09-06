@@ -51,8 +51,8 @@ export default function RestaurantCard({restaurant, dispatch}){
 
     function SelectedCard(){
         return( 
-        <div onClick={handleClose} id={restaurant.id} className="relative flex-none flex flex-col bg-slate-100 rounded-3xl mx-2 overflow-y-scroll no-scrollbar shadow-xl mb-2 transition-all duration-300 h-[24rem] w-[30rem]">
-                <img className="h-60 w-full object-cover"  src={restaurant.images} alt={restaurant.name}/>
+        <div onClick={handleClose} id={restaurant.id} className="relative flex-none flex flex-col bg-slate-100 rounded-3xl mx-2 overflow-y-scroll no-scrollbar shadow-xl mb-2 transition-all duration-300 h-[36rem] w-[44rem]">
+                <img className="h-80 w-full object-cover"  src={restaurant.images} alt={restaurant.name}/>
                 <div className="absolute top-7 right-0 z-30 bg-blue-500 rounded-l-xl w-auto px-3 text-center text-lg text-white text-semibold py-3">{restaurant.deal[0].marker}     {restaurant.deal[0].shortDescription}!</div>
                 <div className="ml-5 grid grid-rows-2 grid-cols-[4fr_1fr]">
                     <div className="col-span-1 row-span-1 text-2xl font-medium my-2 text-nowrap">{restaurant.name}</div>
